@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Latihan Praktikum 4</title>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+                $('.tb1').dblclick(function() {
+                    $(this).css({"background-color": "red"});
+                });
+
+                $('.tb2').dblclick(function() {
+                    $(this).css({"background-color": "orange"});
+                });
+
+                $('.tb3').dblclick(function() {
+                    $(this).css({"background-color": "green"});
+                });
+
+                $('.tb4').dblclick(function() {
+                    $(this).css({"background-color": "blue"});
+                });
+            });
+
+    </script>
+        <style>
+            .tb1 {
+                padding: 60px 60px;
+                background-color: yellow;
+                border: transparent;
+                margin-left: 50px;
+                margin-right: 15px;
+                cursor: pointer;
+                }
+            .tb2, .tb3, .tb4 {
+                padding: 60px 60px;
+                background-color: yellow;
+                border: transparent;
+                margin: 15px;
+                cursor: pointer;
+        </style>
+</head>
+    <body style="background-color: black;">
+        <h1 style="color: whitesmoke;">Klik 2x pada setiap kotak untuk mengubah warna</h1>
+        <button class="tb1"></button> 
+        <button class="tb2"></button> 
+        <button class="tb3"></button> 
+        <button class="tb4"></button> 
+    </body>
+</html>

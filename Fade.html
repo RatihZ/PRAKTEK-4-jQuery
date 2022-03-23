@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Latihan Praktikum 4</title>
+        <script src="jquery-3.6.0.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function() {
+                $("#fo").click(function() {
+                    $("#kotak").fadeOut("slow");
+                });
+                $("#fi").click(function() {
+                    $("#kotak").fadeIn("slow");
+                });
+                $("#fi0").click(function() {
+                    $("#kotak").fadeTo("slow", 0.3);
+                });
+            });
+        </script>
+
+        <style type="text/css">
+            #kotak {
+                width: 300px;
+                height: 250px;
+                margin-left: 600px;
+                background-color: yellow;
+                border: 3px solid green;
+            }
+        </style>
+
+    </head>
+
+<body>
+    <h1 id="kotak"></h1>
+        <p> <button style="margin-left: 601px" id="fo">Fade Out</button>
+            <button style="margin-left: 40px" id="fi">Fade In</button>
+            <button style="margin-left: 40px" id="fi0">Fade In 0.3 </button> 
+        </p>
+</body>
+</html>
